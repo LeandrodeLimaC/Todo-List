@@ -1,11 +1,15 @@
 <template>
   <li class="d-flex align-items-center list-group-item">
-      <button class="btn border-0 text-left flex-grow-1">{{todoString}}</button>
-      <form class="flex-grow-1">
-          <input type="text" class="form-control"/>
+      <button 
+      v-if="!isEditing"
+      :class="{completed}"
+      @click="$emit('on-toggle')"
+      class="btn border-0 text-left flex-grow-1">{{todoString}}</button>
+      <form v-else @submit.prevent="endEditing()" class="flex-grow-1">
+          <input @blur="startEditing()" v-model="newTodoString" type="text" class="form-control"/>
       </form>
-      <button class="btn btn-outline-primary">Edit</button>
-      <button class="btn btn-outline-danger">Delete</button>
+      <button @click="startEditing()" class="btn btn-outline-primary">Edit</button>
+      <button @click="$emit('on-delete')" class="btn btn-outline-danger">Delete</button>
   </li>
 </template>
 
@@ -19,6 +23,20 @@ export default {
         return{
             isEditing: false,
             newTodoString: '',
+        }
+    },
+    methods:{
+        startEditing(){
+            if(!this.isEditing){
+                this.newTodoString = this.todoString;
+                this.isEditing = true;
+            }else{
+                this.endEditing();   
+            }
+        },
+        endEditing(){
+            this.isEditing = false;
+            this.$emit('on-edit', this.newTodoString)
         }
     }
 };
