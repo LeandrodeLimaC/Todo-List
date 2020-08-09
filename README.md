@@ -1,24 +1,9 @@
-# vue-youtube
+# Todo-List
 
-## Project setup
-```
-npm install
-```
+**versão 1.0**
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Projeto criado através de uma [série de videos](https://cli.vuejs.org/config/) do youtube.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+O foco da aula está na comunicação entre os componentes, por conta disso o autor apenas utiliza o bootstrap de forma basica para não tomar muito tempo
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![alt text](https://github.com/leandrodelimac/todo-list/blob/master/assets/prints/v-1.0.png?raw=true)
