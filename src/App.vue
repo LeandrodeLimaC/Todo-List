@@ -1,13 +1,17 @@
 <template>
-  <div>
-    <h1>H</h1>
-    <TodoList/>
-  </div>  
+  <v-app id="inspire">
+    <v-container fluid>
+      <v-row  
+        align="center"
+        justify="center">
+        <TodoList/>
+      </v-row>
+    </v-container>  
+  </v-app>
 </template>
 
 <script>
-  import TodoList from './components/TodoList';
-
+import TodoList from "./components/TodoList";
   export default {
     name: "App",
     components: {

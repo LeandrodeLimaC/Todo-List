@@ -1,6 +1,12 @@
 <template>
-  <form @submit.prevent="addTodo()" class="col-12 col-lf-6">
-      <input v-model="newTodo" placeholder="Enter a new Todo" type="text" class="form-control">
+  <form @submit.prevent="addTodo()" class="px-4">
+        <v-text-field
+            v-model="newTodo" 
+            label="Add task..."
+            outlined
+            :counter="counterEn ? counter : false"
+            dense
+        ></v-text-field>
   </form>
 </template>
 
@@ -8,7 +14,7 @@
 export default {
     data(){
         return{
-            newTodo: ""
+            newTodo: "",
         }
     },
     methods: {

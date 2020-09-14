@@ -1,5 +1,7 @@
 <template>
-  <li class="d-flex align-items-center list-group-item">
+
+
+    <li class="d-flex align-items-center list-group-item">
       <button 
       v-if="!isEditing"
       :class="{completed}"
@@ -10,7 +12,10 @@
       </form>
       <button @click="startEditing()" class="btn btn-outline-primary">Edit</button>
       <button @click="$emit('on-delete')" class="btn btn-outline-danger">Delete</button>
-  </li>
+    </li>
+
+
+   
 </template>
 
 <script>
