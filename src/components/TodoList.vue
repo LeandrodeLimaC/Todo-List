@@ -77,7 +77,7 @@ export default {
   },
   methods: {
     addTodo(newTodo) {
-      this.todos.push({
+      this.todos.unshift({
         todoString: newTodo,
         completed: false,
       });
