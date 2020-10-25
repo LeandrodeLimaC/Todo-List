@@ -1,25 +1,22 @@
 <template>
-  <v-card class="mx-auto" tile>
-    <v-col class="mx-auto">
-      <v-subheader>Design Hand-off Checklist</v-subheader>
-      <new-todo @on-addTodo="addTodo($event)" />
-      <v-divider />
-      <v-list-item>
-        <v-list-item-content>
-          <v-list-item-title>
-            <todo
-              v-for="(todo, index) in todos"
-              :key="index"
-              :todoString="todo.todoString"
-              :completed="todo.completed"
-              @on-delete="deleteTodo(todo)"
-              @on-toggle="toggleTodo(todo)"
-              @on-edit="editTodo(todo, $event)"
-            />
-          </v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-    </v-col>
+  <v-card tile>
+        <v-card-title color="primary" class="elevation-1">
+          <span class="mb-5 mt-1 ml-3 text--secondary headline">
+            Design Hand-off Checklist
+          </span>
+          <new-todo @on-addTodo="addTodo($event)" />
+        </v-card-title>
+      <v-list class="pa-0">
+        <todo
+          v-for="(todo, index) in todos"
+          :key="index"
+          :todoString="todo.todoString"
+          :completed="todo.completed"
+          @on-delete="deleteTodo(todo)"
+          @on-toggle="toggleTodo(todo)"
+          @on-edit="editTodo(todo, $event)"
+        />
+      </v-list>
   </v-card>
 </template>
 
@@ -46,7 +43,7 @@ export default {
         { todoString: "Consistent spacing", completed: false },
         { todoString: "Transitions/Animations", completed: false },
         { todoString: "Unsplash image links", completed: false },
-        { todoString: "Export new icons", completed: false },
+        { todoString: "Export new icons", completed: true },
         {
           todoString:
             "Mock-up with really long text (Does text wrap/truncate/etc.)",
@@ -89,7 +86,11 @@ export default {
       todo.todoString = newTodoString;
     },
     deleteTodo(deleteTodo) {
-      this.todos = this.todos.filter((todo) => todo !== deleteTodo);
+      this.todos.splice(
+          this.todos.findIndex((todo) => todo === deleteTodo),
+          1,
+      );
+
     },
   },
 };
