@@ -1,12 +1,14 @@
 <template>
-  <form @submit.prevent="addTodo()" class="px-4">
+  <v-form @submit.prevent="addTodo()" class="pa-0" style="width:100%">
     <v-text-field
+    rounded
       v-model="newTodo"
-      label="Add task..."
+      label="Add a task..."
       outlined
-      dense
+      hide-details
+      prepend-inner-icon="mdi-menu-open"
     />
-  </form>
+  </v-form>
 </template>
 
 <script>
@@ -27,5 +29,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+>>> .v-input__prepend-inner {
+    margin-right: auto;
+    padding-right: 8px!important;
+}
 </style>
