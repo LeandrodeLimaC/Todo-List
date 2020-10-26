@@ -1,6 +1,10 @@
 <template>
   <v-app>
-    <v-container fluid class="pa-0">
+    <v-container fluid class="pa-0" style="
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+">
       <v-row align="center" justify="center">
         <v-col sm="12" md="6" lg="5">
           <todo-list />

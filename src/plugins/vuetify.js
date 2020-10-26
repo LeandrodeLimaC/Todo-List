@@ -20,6 +20,7 @@ export default new Vuetify({
         warning: '#FFC107',
         gray: '#303030'
       },
+      
     },
   },
 });

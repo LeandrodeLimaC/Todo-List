@@ -1,12 +1,15 @@
 <template>
-  <v-card tile>
-        <v-card-title color="primary" class="elevation-1">
+  <v-card tile style="
+    max-height: 60vh;
+    display: flex;
+    flex-flow: column;">
+        <v-card-title color="primary" >
           <span class="mb-5 mt-1 ml-3 text--secondary headline">
             Design Hand-off Checklist
           </span>
           <new-todo @on-addTodo="addTodo($event)" />
         </v-card-title>
-      <v-list class="pa-0">
+      <v-list class="pa-0" style="overflow-y: auto;">
         <todo
           v-for="(todo, index) in todos"
           :key="index"
