@@ -1,6 +1,6 @@
 <template>
   <v-card tile style="
-    max-height: 60vh;
+    max-height: 80vh;
     display: flex;
     flex-flow: column;">
         <v-card-title color="primary" >
