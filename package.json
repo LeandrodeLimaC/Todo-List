@@ -1,6 +1,6 @@
 {
-  "name": "vue-youtube",
-  "version": "0.1.0",
+  "name": "todo-list",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
