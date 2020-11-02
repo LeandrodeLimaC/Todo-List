@@ -1,13 +1,14 @@
 # Todo-List
 
-Conteúdo 
+**versão 2.0**
+
+Conteúdo
  1. [Motivo/Objetivo](https://github.com/LeandrodeLimaC/Todo-List#Objetivo)  
  2. [Requisitos](https://github.com/LeandrodeLimaC/Todo-List#Requisitos) 
  3. [Começando](https://github.com/LeandrodeLimaC/Todo-List#Começando) 
  4. [O que há de novo?](https://github.com/LeandrodeLimaC/Todo-List#Descrição-dessa-versão)  
  4. [Versões anteriores](https://github.com/LeandrodeLimaC/Todo-List#Versões-anteriores)
 
-**versão 2.0**
 
 Objetivo
 ---
