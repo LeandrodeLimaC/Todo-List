@@ -46,7 +46,7 @@ Descrição dessa versão
 Instalação do vuetify, melhorias de estrutura de elementos, correção de bugs e preparação para expansões futuras.
 Algumas funcionalidades foram adicionadas a essa versão
 
-![checklist versão 2.0](https://github.com/LeandrodeLimaC/Todo-List/blob/master/src/assets/prints/v-2.0/checklist.jpg)
+![checklist versão 2.0](https://github.com/LeandrodeLimaC/Todo-List/blob/master/src/assets/prints/v-2.0/checklist.jpeg)
 
 ***Edição inline***
 Clicar em uma opção do checklist ira transformar o campo de texto em um input, possibilitando a edição do mesmo de forma fácil, clicar para fora do campo ou no icone de salvar, resultará na atualização dos dados  
