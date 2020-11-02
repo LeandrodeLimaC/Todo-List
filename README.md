@@ -2,7 +2,6 @@
 
 **versão 2.0**
 
-Conteúdo
  1. [Motivo/Objetivo](https://github.com/LeandrodeLimaC/Todo-List#Objetivo)  
  2. [Requisitos](https://github.com/LeandrodeLimaC/Todo-List#Requisitos) 
  3. [Começando](https://github.com/LeandrodeLimaC/Todo-List#Começando) 
